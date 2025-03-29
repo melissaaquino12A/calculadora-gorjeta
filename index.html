@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tip Calculator</title>
 </head>
 <body>
     <header>
-        <img src="./images/logo.svg" alt="tip calculator splitter logo">
+        <img src="./images/logo.svg" alt="tip Calculator splitter logo">
     </header>
 
     <main>
         <section class="info">
             <div class="bill">
-                <strong>Bill </strong>
-           
+                <strong>Bill</strong>
 
-            <div class="input-box">
-                <img src="./images/icon-dollar.svg" alt="icon dollar">
-                <input type="number" id="bill" placeholder="0">
+                <div class="input-box">
+                    <img src="./images/icon-dollar.svg" alt="icon-dollar">
+                    <input type="number" id="bill" placeholder="0">
+                </div>
             </div>
-        </div>
 
             <div class="tip">
                 <strong>Select Tip %</strong>
@@ -32,43 +31,39 @@
                     <button>15%</button>
                     <button>25%</button>
                     <button>50%</button>
-                    <input type="number" id="custom-tip" placeholder="Custom">
+                    <input type="number" id="custom-tip" placeholder="custom">
                 </div>
             </div>
 
             <div class="people">
                 <strong>Number of People</strong>
+
+                <div class="input-box">
+                    <img src="./images/icon-person.svg" alt="icon person">
+                    <input type="number" id="people" placeholder="0">
+                </div>
+            </div>
+
            
-
-            <div class="input-box">
-                <img src="./images/icon-person.svg" alt="icon person">
-                <input type="number" id="people" placeholder="0">
-            </div>
-        </div>
         </section>
-
         <section class="results">
+           <div>
             <div class="amount">
+                <p>Tip Amount <br><span>/ person</span></p>
 
-                <p>
-                    Tip Amount <br> <span>/ person</span>
-
-                </p>
-
-                <strong>$4.27</strong>
-
-                <p>
-                    Total <br> <span>/ person</span>
-
-                </p>
-
-
-                <strong>$12.79</strong>
-
-                 <button>Reset</button> 
-
+                <strong>$0.00</strong>
             </div>
+
+            <div class="total">
+                <p>Total <br><span>/ person</span></p>
+
+                <strong>$0.00</strong>
+            </div>
+           </div>
+
+            <button>Reset</button>
         </section>
     </main>
 </body>
 </html>
+
